@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Header(props) {
   const [darkMode, setDarkMode] = useState(true);
-  const [navbarCollapsed, setNavbarCollapsed] = useState(true); // State to track navbar collapse status
+  const [navbarCollapsed, setNavbarCollapsed] = useState(true); 
   const x = useNavigate();
 
   const toggleDarkMode = () => {
@@ -39,7 +39,9 @@ function Header(props) {
               }
               <button className="btn m-2 side_button1 h" onClick={() => x('AboutUS')} type="button">About Us</button>
               <button className="btn m-2 side_button1 h" onClick={() => x('ContactUs')} type="button">Contact Us</button>
-              {/* Dropdown menu */}
+              <div>
+              <button className="btn m-2 side_button1 h homebtn" onClick={() => x('Home')} type="button">Home</button>
+              </div>
               <div className="dropdown hidden">
                 <button className="btn m-2 side_button1 dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                   Quizes

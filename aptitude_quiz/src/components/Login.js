@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate } from 'react-router-dom';
+
 import axios from 'axios';
 import './style.css';
 
@@ -8,6 +9,8 @@ const Login = (props) => {
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
   const [userError, setUserError] = useState("");
+  const x = useNavigate();
+
 
   const handleSubmit = async(e) => {
     e.preventDefault();
@@ -18,6 +21,7 @@ const Login = (props) => {
         });
         if(response.data.success){
           props.prop(true)
+          x('/');
         }else{
           setUserError("Invalid user !!!!");
         }

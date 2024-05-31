@@ -1,4 +1,4 @@
-const Login = require("./connection");
+const {Login} = require("./connection");
 
 const register = async (req, resp) => {
     try {

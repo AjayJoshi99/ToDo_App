@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './style.css';
 
 const LogOut = (props) => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [rememberMe, setRememberMe] = useState(false);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     props.prop(false);

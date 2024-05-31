@@ -118,4 +118,45 @@ li::before {
  .errorMsg{
   color:red;
  }
+ span.h4{
+  color: rgb(255, 255, 255);
+}
   
+ @media (max-width: 426px) {
+  .text-center{
+    padding: 6px;
+  }
+  .childDiv{
+    margin-top: 20px;
+  }
+  .exam_button {
+    width: 90%;
+    height: 45px;
+    font-size: 18px;
+}
+.homeDiv {
+  margin: 0 auto;
+  width: 90%;
+}
+.h{
+  margin:0;
+  font-size: large;
+}
+ul {
+  list-style: none;
+  margin-left: -31px;
+}
+li::before {
+  content: "\00BB";
+  font-size: 20px;
+}
+.form-container {
+  width: 260px;
+  margin-top: 60px;
+}
+.form-container button{
+    width: 86px;
+    height: 38px;
+    padding: 0px
+}
+ }

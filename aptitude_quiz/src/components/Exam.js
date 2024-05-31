@@ -81,8 +81,8 @@ function Exam( props) {
             obj.Question.map((que,index)=>{
             return(
               <div className="card border rounded m-3 p-2 shadow-lg" key={index}>
-                { userAnswer[index+1]==que[5]? <h3 style={{color:'green'}}>Correct</h3>: <h3 style={{color:"red"}}>Incorrect</h3>}
-              <p className="card-text"><span className='h4'>Question {index + 1} :  </span>{que[0]}</p>
+                { userAnswer[index+1]===que[5]? <h3 style={{color:'green'}}>Correct</h3>: <h3 style={{color:"red"}}>Incorrect</h3>}
+              <p className="card-text"><span className='h5'>Question {index + 1} :  </span>{que[0]}</p>
               <div>
               <div>A.  {que[1]}</div>
               <div>B.  {que[2]}</div>

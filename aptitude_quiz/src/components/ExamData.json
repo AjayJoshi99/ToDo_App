@@ -163,7 +163,7 @@
     ,
 { "e": "12", "Question" :[
         
-        ["It was Sunday on Jan 1, 2006. What was the day of the week Jan 1, 2010?", "Sunday", "Saturday", "Friday", "Wednesday", "MoFridaynday"],
+        ["It was Sunday on Jan 1, 2006. What was the day of the week Jan 1, 2010?", "Sunday", "Saturday", "Friday", "Wednesday", "Friday"],
         ["What was the day of the week on 28th May, 2006?", "Thursday", "Friday", "Saturday", "Sunday", "Sunday"],
         ["What was the day of the week on 17th June, 1998?", "Monday", "Tuesday", "Wednesday", "Thursday", "Wednesday"],
         ["What will be the day of the week 15th August, 2010?", "Sunday", "Monday", "Tuesday", "Friday", "Sunday"],

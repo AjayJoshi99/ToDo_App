@@ -1,7 +1,6 @@
-const Login = require('./connection');
+const {Login} = require('./connection');
 
 const a=async(req,res)=>{
-// router.post('/check_user', async (req, res) => {
   try {
     const { email, password } = req.body;
     const user = await Login.findOne({ email: email, password: password });
@@ -14,6 +13,5 @@ const a=async(req,res)=>{
     console.error('Error retrieving user data:', error);
     res.status(500).json({ message: 'Internal server error' });
   }
-// });
 }
 module.exports = a;

@@ -36,6 +36,7 @@
   text-align: center;
   background-color: #050505;
   overflow-y: auto;
+  scrollbar-width: none
 }
 
 .main-content {
@@ -62,6 +63,9 @@
 }
 
 @media (max-width: 426px) {
+  .homebtn{
+    width: 93%;
+  }
   .app {
     flex-direction: row; 
   }
@@ -71,8 +75,26 @@
   .sidebar {
    display: none;
   }
-
   .vertical-line {
-    display: block; /* Display vertical line for larger devices */
+    display: block; 
   }
+  .childDiv{
+    font-size: small;
+  }
+  .h {
+    font-size: large;
+}
+  .dropdown-toggle {
+    white-space: nowrap;
+    width: 93%;
+}
+.main-content {
+  flex: 1 1;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+span{
+  color:yellow
+}
 }
