@@ -16,6 +16,6 @@ app.use('/check_user', login);
 app.use('/register', register);
 app.use('/contact_us', contactus);
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running on port ${PORT}`);
 });
